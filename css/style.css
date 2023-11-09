@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
+:root{
+    --rojo:	#8b060f;
+    --rojizo: #70060d;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris:#fafafac5;
+}
+*{
+    font-family: 'Quicksand';
+    margin:0; padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*  Estilo de la barra y carrusel*/
+#inicio{
+    height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
+/*  Estilo de la barra  */
+#inicio header{
+    width: 100%;
+    background: linear-gradient(to right, var(--blanco), #e40110a4, #8b060f);
+}
+
+#inicio .header_contenedor{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+#inicio header .logo{
+    margin-left: 2rem;
+    display: flex; 
+    align-items: center;
+}
+
+#inicio header .logo i{
+    font-size: 2rem;
+    padding-right: 1rem;
+    color:var(--rojo);
+}
+
+#inicio header .logo h1{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script';
+    color: var(--rojizo);
+}
+
+#navbar{
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%);
+}
+
+#navbar ul{
+    display: flex; 
+    list-style: none;
+}
+
+#navbar ul li{
+    text-align: center;
+}
+
+#navbar ul li i{
+    display: block;
+    color: var(--gris);
+    margin: 0 1rem;
+}
+
+#navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    margin: 0 1.5rem;
+}
+
+
+#navbar ul li:hover i{
+    color: var(--rojizo);
+}
+
+#navbar ul li ul li:hover{
+    background: var(--blanco);   
+}
+
+#navbar ul li ul li a:hover{
+    color: var(--rojo);
+}
+
+#navbar ul li ul{
+    background: linear-gradient(to right, var(--blanco), #e40110a4, #8b060f);
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+#navbar li:hover > ul{
+    display: block;
+}
+#navbar ul li ul li{
+    position: relative;
+    padding: 0.5rem;
+}
+
+#inicio header .redes a{
+    display: inline-block;
+    background-color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: var(--rojizo);
+}
+
+#inicio header .redes a:hover{
+    background-color: var(--rojo);
+    color: var(--blanco)
+}
+#menu-bar{
+    font-size: 1.5rem;
+    color: var(--blanco);
+    display: none;
+}
+
+/*  Estilo del Carrusel*/
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+
+#inicio .carrusel .titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: var(--blanco);
+    text-align: center;
+}
+
+#inicio .carrusel .titulo h2{
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+    font-family: 'Dancing Script';
+} 
+
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+
+#inicio .gallery-cell{
+    width: 100%;
+    margin-right: 0.5rem;
+    align-items: center;
+    height: 100%;
+}
+
+#inicio .gallery-cell img{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/*  Estilo de Quiénes somos*/
+#especial,
+#somos{
+    padding:1rem 9%; 
+ }
+ 
+ #somos h2{
+     margin-bottom: 1rem;
+     text-align: center;
+     color: var(--rojo);
+     font-size: 3rem;
+     font-family: 'Dancing Script';
+ }
+ 
+ #somos .linea{
+    border-top: 3.5px solid var(--rojo);
+}
+ 
+#somos .nosotros{ 
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem; 
+} 
+ 
+ #somos .nosotros .image{ 
+    flex:1 1 20rem; 
+} 
+ 
+ #somos .nosotros .image img{ 
+     width: 100%;
+     align-items: center;  
+     min-height:50vh; 
+ } 
+ 
+ #somos .nosotros .contenido{ 
+     flex:1 1 25rem;
+     justify-content: center; 
+     padding:1rem 1rem; 
+       
+ } 
+ 
+ #somos .nosotros .contenido h2{ 
+     font-size: 2.5rem;
+     font-family: 'Dancing Script';
+     text-align: center; 
+     color:var(--negro); 
+ }
+ 
+ #somos .nosotros .contenido p{ 
+     font-size: 1rem; 
+     font-family: 'Quicksand';
+     text-align: justify; 
+     padding:2rem 0; 
+     line-height: 2; 
+     color:var(--negro); 
+ }
+ 
+ #somos .nosotros .contenido .btn_2{ 
+     display: inline-block; 
+     background: var(--rojo);  
+     color: var(--blanco); 
+     font-size: 1rem; 
+     padding:1rem 2rem; 
+     cursor: pointer; 
+     margin-left: 30%; 
+     border-radius: 1rem;	
+ } 
+ 
+ #somos .nosotros .contenido .btn_2:hover{ 
+     background: #b96a70; 
+     color:var(--blanco); 
+ }
+ 
+ /*  Estilo de Sabores  */
+ 
+ #sabores{
+    padding:1rem 9%; 
+    margin: auto;
+    background: radial-gradient(circle at top left, #d82d2d, #f5caca);
+ }
+ 
+ #sabores h2{
+     margin-bottom: 1rem;
+     text-align: center;
+     color: var(--blanco);
+     font-size: 3rem;
+     font-family: 'Dancing Script';
+ }
+ 
+ #sabores .linea{
+     border-top: 3.5px solid var(--blanco);
+ }
+ 
+ #sabores .fila{
+     display: flex;
+     flex-wrap: wrap;
+     gap:1.5rem;
+ }
+ 
+ #sabores .fila .caja img{
+     max-width: 4rem;
+ }
+ 
+ #sabores .fila .caja{
+     display: flex;
+     align-items: center;
+     padding: 0.5rem;
+     margin: 0.5rem;
+     flex:1 1 15rem;
+     position: relative;
+ }
+ 
+ #sabores .fila .caja:hover{
+     background-color: var(--rojo);
+ }
+ 
+ #sabores .fila .caja .texto{
+     margin-left: 1rem;
+     font-size: 1rem;
+     font-family: 'Quicksand';
+     color: var(--blanco);
+ }
+
+
+/*  Estilo de platillos  */
+#especial .titulo, #menu .titulo{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Dancing Script';
+    padding:1rem;
+    color:rgb(80, 80, 80);
+}
+  
+#especial .titulo span, #menu .titulo span{
+    color:var(--rojo);
+    font-family: 'Dancing Script';
+}
+
+#especial .comida{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 6rem 2rem 6rem;
+}
+  
+#especial .comida .caja{
+    flex:1 1 15rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem var(--rojizo);
+    border:.1rem solid var(--negro);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+  
+#especial .comida .caja .image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    top:-100%; left:0;
+}
+  
+#especial .comida .caja .content{
+    text-align: center;
+    background:var(--blanco);
+    padding:2rem;
+}
+  
+#especial .comida .caja .content img{
+    margin:0.5rem 0;
+}
+  
+#especial .comida .caja .content h3{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script';
+    color:var(--rojo);
+    margin-bottom: .5rem;
+}
+  
+#especial .comida .caja .content p{
+    font-size: .9rem;
+    font-family: 'Quicksand';
+    color:var(--negro);
+    padding:.5rem 0;
+}
+  
+#especial .comida .caja:hover .image{
+    top:0;
+}
+  
+#especial .comida .caja:hover .content{
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    html{
+      font-size: 55%;
+    }
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+}
+
+@media(max-width:425px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    #navbar{
+      position: absolute;
+      top:100%; left: 0; right:0;
+      background: #f7f7f7;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    #navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  
+    #navbar a{
+      margin: 1.5rem;
+      padding:1.5rem;
+      display: block;
+      border:.2rem solid rgba(0,0,0,.1);
+      border-left:.5rem solid var(--red);
+      background:#fff;
+    }
+}
+
+
+
+@media(max-width:450px){
+
+    html{
+      font-size: 50%;
+    }
+
+    .orden .row form .inputBox input{
+        width:100%;
+    }
+}
+  
+
+
+
+
