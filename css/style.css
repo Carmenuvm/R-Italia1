@@ -486,6 +486,93 @@ html{
  }
 
 
+#menu{
+    padding:1rem 8%; 
+    margin: auto;
+}
+
+ #menu .box1{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin: 0 3rem;
+}
+  
+#menu .box1 .box{
+    padding:2rem;
+    background:var(--blanco);
+    box-shadow: 0 .5rem 1rem var(--rojo);
+    border:.1rem solid var(--rojo);
+    border-radius: .5rem;
+    text-align: center;
+    flex:1 1 10rem;
+    position: relative;
+}
+  
+#menu .box1 .box img{
+    height:10rem;
+    object-fit: cover;
+    width:100%;
+    border-radius: .5rem;
+}
+  
+#menu .box1 .box .precio{
+    position: absolute;
+    top:2rem; left:2rem;
+    background:var(--rojo);
+    color:var(--blanco);
+    font-size: 1rem;
+    font-family: 'Dancing Script';
+    padding:.5rem 1rem;
+    border-radius: .5rem;
+}
+  
+#menu .box1 .box h3{
+    color: var(--rojo);
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+  
+#menu .box1 .box .stars i{
+    color:gold;
+    font-size: 0.8rem;
+    padding:1rem .1rem;
+}
+
+
+#menu .btn{
+    display: inline-block;
+    padding:.8rem 1rem;
+    border:.2rem solid var(--rojo);
+    color:var(--rojizo);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+#menu .btn::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--rojizo);
+    transition: .3s linear;
+    z-index: -1;
+}
+#menu .btn:hover::before{
+    width:100%;
+    left: 0;
+}
+ 
+#menu .btn:hover{
+    color:var(--blanco);
+}
 
 
 #footer{
