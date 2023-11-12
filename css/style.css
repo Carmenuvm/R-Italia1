@@ -1,34 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
-:root{
-    --rojo:	#8b060f;
+
+:root {
+    --rojo: #8b060f;
     --rojizo: #70060d;
     --blanco: #ffffff;
     --negro: #000000;
-    --gris:#fafafac5;
-}
-*{
-    font-family: 'Quicksand';
-    margin:0; padding:0;
+    --gris: #fafafac5;
 }
 
-html{
+* {
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 /*  Estilo de la barra y carrusel*/
-#inicio{
+#inicio {
     height: 100vh;
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /*  Estilo de la barra  */
-#inicio header{
+#inicio header {
     width: 100%;
     background: linear-gradient(to right, var(--blanco), #e40110a4, #8b060f);
 }
 
-#inicio .header_contenedor{
+#inicio .header_contenedor {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -38,46 +41,46 @@ html{
     position: relative;
 }
 
-#inicio header .logo{
+#inicio header .logo {
     margin-left: 2rem;
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
-#inicio header .logo i{
+#inicio header .logo i {
     font-size: 2rem;
     padding-right: 1rem;
-    color:var(--rojo);
+    color: var(--rojo);
 }
 
-#inicio header .logo h1{
+#inicio header .logo h1 {
     font-size: 2.5rem;
     font-family: 'Dancing Script';
     color: var(--rojizo);
 }
 
-#navbar{
+#navbar {
     position: absolute;
     left: 65%;
     transform: translate(-50%);
 }
 
-#navbar ul{
-    display: flex; 
+#navbar ul {
+    display: flex;
     list-style: none;
 }
 
-#navbar ul li{
+#navbar ul li {
     text-align: center;
 }
 
-#navbar ul li i{
+#navbar ul li i {
     display: block;
     color: var(--gris);
     margin: 0 1rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     display: inline-block;
     text-decoration: none;
     color: var(--blanco);
@@ -85,34 +88,35 @@ html{
 }
 
 
-#navbar ul li:hover i{
+#navbar ul li:hover i {
     color: var(--rojizo);
 }
 
-#navbar ul li ul li:hover{
-    background: var(--blanco);   
+#navbar ul li ul li:hover {
+    background: var(--blanco);
 }
 
-#navbar ul li ul li a:hover{
+#navbar ul li ul li a:hover {
     color: var(--rojo);
 }
 
-#navbar ul li ul{
+#navbar ul li ul {
     background: linear-gradient(to right, var(--blanco), #e40110a4, #8b060f);
     display: none;
     position: absolute;
     min-width: 140px;
 }
 
-#navbar li:hover > ul{
+#navbar li:hover>ul {
     display: block;
 }
-#navbar ul li ul li{
+
+#navbar ul li ul li {
     position: relative;
     padding: 0.5rem;
 }
 
-#inicio header .redes a{
+#inicio header .redes a {
     display: inline-block;
     background-color: var(--blanco);
     text-decoration: none;
@@ -121,23 +125,24 @@ html{
     color: var(--rojizo);
 }
 
-#inicio header .redes a:hover{
+#inicio header .redes a:hover {
     background-color: var(--rojo);
     color: var(--blanco)
 }
-#menu-bar{
+
+#menu-bar {
     font-size: 1.5rem;
     color: var(--blanco);
     display: none;
 }
 
 /*  Estilo del Carrusel*/
-#inicio .carrusel{
+#inicio .carrusel {
     position: relative;
     height: 100%;
 }
 
-#inicio .carrusel .titulo{
+#inicio .carrusel .titulo {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -146,25 +151,25 @@ html{
     text-align: center;
 }
 
-#inicio .carrusel .titulo h2{
+#inicio .carrusel .titulo h2 {
     font-size: 50px;
     margin-bottom: 1.5rem;
     font-family: 'Dancing Script';
-} 
+}
 
-#inicio .gallery{
+#inicio .gallery {
     width: 100%;
     height: 100%;
 }
 
-#inicio .gallery-cell{
+#inicio .gallery-cell {
     width: 100%;
     margin-right: 0.5rem;
     align-items: center;
     height: 100%;
 }
 
-#inicio .gallery-cell img{
+#inicio .gallery-cell img {
     display: block;
     width: 100%;
     height: 80vh;
@@ -173,259 +178,263 @@ html{
 
 /*  Estilo de Quiénes somos*/
 #especial,
-#somos{
-    padding:1rem 9%; 
- }
- 
- #somos h2{
-     margin-bottom: 1rem;
-     text-align: center;
-     color: var(--rojo);
-     font-size: 3rem;
-     font-family: 'Dancing Script';
- }
- 
- #somos .linea{
+#somos {
+    padding: 1rem 9%;
+}
+
+#somos h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--rojo);
+    font-size: 3rem;
+    font-family: 'Dancing Script';
+}
+
+#somos .linea {
     border-top: 3.5px solid var(--rojo);
 }
- 
-#somos .nosotros{ 
+
+#somos .nosotros {
     display: flex;
     gap: 1.5rem;
     padding: 1rem 2rem;
-    margin-bottom: 2rem; 
-} 
- 
- #somos .nosotros .image{ 
-    flex:1 1 20rem; 
-} 
- 
- #somos .nosotros .image img{ 
-     width: 100%;
-     align-items: center;  
-     min-height:50vh; 
- } 
- 
- #somos .nosotros .contenido{ 
-     flex:1 1 25rem;
-     justify-content: center; 
-     padding:1rem 1rem; 
-       
- } 
- 
- #somos .nosotros .contenido h2{ 
-     font-size: 2.5rem;
-     font-family: 'Dancing Script';
-     text-align: center; 
-     color:var(--negro); 
- }
- 
- #somos .nosotros .contenido p{ 
-     font-size: 1rem; 
-     font-family: 'Quicksand';
-     text-align: justify; 
-     padding:2rem 0; 
-     line-height: 2; 
-     color:var(--negro); 
- }
- 
- #somos .nosotros .contenido .btn_2{ 
-     display: inline-block; 
-     background: var(--rojo);  
-     color: var(--blanco); 
-     font-size: 1rem; 
-     padding:1rem 2rem; 
-     cursor: pointer; 
-     margin-left: 30%; 
-     border-radius: 1rem;	
- } 
- 
- #somos .nosotros .contenido .btn_2:hover{ 
-     background: #b96a70; 
-     color:var(--blanco); 
- }
- 
- /*  Estilo de Sabores  */
- 
- #sabores{
-    padding:1rem 9%; 
+    margin-bottom: 2rem;
+}
+
+#somos .nosotros .image {
+    flex: 1 1 20rem;
+}
+
+#somos .nosotros .image img {
+    width: 100%;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#somos .nosotros .contenido {
+    flex: 1 1 25rem;
+    justify-content: center;
+    padding: 1rem 1rem;
+
+}
+
+#somos .nosotros .contenido h2 {
+    font-size: 2.5rem;
+    font-family: 'Dancing Script';
+    text-align: center;
+    color: var(--negro);
+}
+
+#somos .nosotros .contenido p {
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    text-align: justify;
+    padding: 2rem 0;
+    line-height: 2;
+    color: var(--negro);
+}
+
+#somos .nosotros .contenido .btn_2 {
+    display: inline-block;
+    background: var(--rojo);
+    color: var(--blanco);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-left: 30%;
+    border-radius: 1rem;
+}
+
+#somos .nosotros .contenido .btn_2:hover {
+    background: #b96a70;
+    color: var(--blanco);
+}
+
+/*  Estilo de Sabores  */
+
+#sabores {
+    padding: 1rem 9%;
     margin: auto;
     background: radial-gradient(circle at top left, #d82d2d, #f5caca);
- }
- 
- #sabores h2{
-     margin-bottom: 1rem;
-     text-align: center;
-     color: var(--blanco);
-     font-size: 3rem;
-     font-family: 'Dancing Script';
- }
- 
- #sabores .linea{
-     border-top: 3.5px solid var(--blanco);
- }
- 
- #sabores .fila{
-     display: flex;
-     flex-wrap: wrap;
-     gap:1.5rem;
- }
- 
- #sabores .fila .caja img{
-     max-width: 4rem;
- }
- 
- #sabores .fila .caja{
-     display: flex;
-     align-items: center;
-     padding: 0.5rem;
-     margin: 0.5rem;
-     flex:1 1 15rem;
-     position: relative;
- }
- 
- #sabores .fila .caja:hover{
-     background-color: var(--rojo);
- }
- 
- #sabores .fila .caja .texto{
-     margin-left: 1rem;
-     font-size: 1rem;
-     font-family: 'Quicksand';
-     color: var(--blanco);
- }
+}
+
+#sabores h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+    font-family: 'Dancing Script';
+}
+
+#sabores .linea {
+    border-top: 3.5px solid var(--blanco);
+}
+
+#sabores .fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#sabores .fila .caja img {
+    max-width: 4rem;
+}
+
+#sabores .fila .caja {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    flex: 1 1 15rem;
+    position: relative;
+}
+
+#sabores .fila .caja:hover {
+    background-color: var(--rojo);
+}
+
+#sabores .fila .caja .texto {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    color: var(--blanco);
+}
 
 
 /*  Estilo de platillos  */
-#especial .titulo, #menu .titulo{
+#especial .titulo,
+#menu .titulo {
     margin-top: 1rem;
     text-align: center;
     font-size: 3rem;
     font-family: 'Dancing Script';
-    padding:1rem;
-    color:rgb(80, 80, 80);
+    padding: 1rem;
+    color: rgb(80, 80, 80);
 }
-  
-#especial .titulo span, #menu .titulo span{
-    color:var(--rojo);
+
+#especial .titulo span,
+#menu .titulo span {
+    color: var(--rojo);
     font-family: 'Dancing Script';
 }
 
-#especial .linea{
+#especial .linea {
     border-top: 3.5px solid var(--rojo);
 }
-#especial .comida{
+
+#especial .comida {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 1.5rem 6rem 2rem 6rem;
 }
-  
-#especial .comida .caja{
-    flex:1 1 15rem;
+
+#especial .comida .caja {
+    flex: 1 1 15rem;
     position: relative;
     overflow: hidden;
     box-shadow: 0 .5rem 1rem var(--rojizo);
-    border:.1rem solid var(--negro);
+    border: .1rem solid var(--negro);
     cursor: pointer;
     border-radius: .5rem;
 }
-  
-#especial .comida .caja .image{
-    height:100%;
-    width:100%;
+
+#especial .comida .caja .image {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     position: absolute;
-    top:-100%; left:0;
+    top: -100%;
+    left: 0;
 }
-  
-#especial .comida .caja .content{
+
+#especial .comida .caja .content {
     text-align: center;
-    background:var(--blanco);
-    padding:2rem;
+    background: var(--blanco);
+    padding: 2rem;
 }
-  
-#especial .comida .caja .content img{
-    margin:0.5rem 0;
+
+#especial .comida .caja .content img {
+    margin: 0.5rem 0;
 }
-  
-#especial .comida .caja .content h3{
+
+#especial .comida .caja .content h3 {
     font-size: 1.5rem;
     font-family: 'Dancing Script';
-    color:var(--rojo);
+    color: var(--rojo);
     margin-bottom: .5rem;
 }
-  
-#especial .comida .caja .content p{
+
+#especial .comida .caja .content p {
     font-size: .9rem;
     font-family: 'Quicksand';
-    color:var(--negro);
-    padding:.5rem 0;
+    color: var(--negro);
+    padding: .5rem 0;
 }
-  
-#especial .comida .caja:hover .image{
-    top:0;
+
+#especial .comida .caja:hover .image {
+    top: 0;
 }
-  
-#especial .comida .caja:hover .content{
+
+#especial .comida .caja:hover .content {
     transform: translateY(100%);
 }
 
 
 /*  Estilo de Servicios  */
-#servicios{
-    padding:1rem 9%; 
+#servicios {
+    padding: 1rem 9%;
     margin: auto;
     background: radial-gradient(circle at top right, #d82d2d, #f5caca);
 }
 
-#servicios .titulo{
+#servicios .titulo {
     margin-top: 1rem;
     text-align: center;
     font-size: 3rem;
     font-family: 'Dancing Script';
-    padding:1rem;
-    color:#ffffff;
+    padding: 1rem;
+    color: #ffffff;
 }
 
-#servicios .servir{
+#servicios .servir {
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
-  
-#servicios .servir .caja{
-    flex:1 1 10rem;
+
+#servicios .servir .caja {
+    flex: 1 1 10rem;
     text-align: center;
 }
-  
-#servicios .servir .caja img{
+
+#servicios .servir .caja img {
     border-radius: 50%;
-    border:.5rem solid var(--red);
+    border: .5rem solid var(--red);
     box-shadow: 0 .5rem 1rem rgb(255, 255, 255);
 }
-  
-#servicios .servir .caja h3{
+
+#servicios .servir .caja h3 {
     font-size: 1rem;
     font-family: 'Quicksand';
-    color:#ffffff;
-    padding:1rem;
+    color: #ffffff;
+    padding: 1rem;
 }
 
-#clientes{
-    padding:1rem 9%; 
+#clientes {
+    padding: 1rem 9%;
     margin: auto;
 }
 
-#clientes .caja-cliente{
+#clientes .caja-cliente {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
- }
+}
 
- #clientes h2{
+#clientes h2 {
     padding-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -434,118 +443,120 @@ html{
     font-family: 'Dancing Script';
 }
 
-#clientes .linea{
+#clientes .linea {
     border-top: 3.5px solid var(--rojo);
 }
- 
- #clientes .caja-cliente .caja{
+
+#clientes .caja-cliente .caja {
     background: var(--blanco);
-    margin:1rem;
-    padding:1rem;
+    margin: 1rem;
+    padding: 1rem;
     text-align: center;
     position: relative;
-    border:.3rem solid var(--rojo);
+    border: .3rem solid var(--rojo);
     box-shadow: 0 .5rem 1rem var(--rojo);
-    flex:1 1 30rem;
+    flex: 1 1 30rem;
     border-radius: .5rem;
- }
- 
- #clientes .caja-cliente .caja .fa-quote-right{
+}
+
+#clientes .caja-cliente .caja .fa-quote-right {
     position: absolute;
-    top:1rem; right:2rem;
+    top: 1rem;
+    right: 2rem;
     font-size: 2.5rem;
-    color:var(--rojizo);
+    color: var(--rojizo);
     opacity: .3;
- }
- 
- #clientes .caja-cliente .caja .user img{
+}
+
+#clientes .caja-cliente .caja .user img {
     border-radius: 50%;
     object-fit: cover;
     height: 7rem;
-    width:7rem;
+    width: 7rem;
     margin-top: 2rem;
- }
- 
- #clientes .caja-cliente .caja .user h3{
-    color:var(--rojo);
+}
+
+#clientes .caja-cliente .caja .user h3 {
+    color: var(--rojo);
     font-size: 1.5rem;
     font-family: 'Dancing Script';
- }
- 
- #clientes .caja-cliente .caja .user .stars i{
+}
+
+#clientes .caja-cliente .caja .user .stars i {
     color: #ffee00ee;
     font-size: 1.5rem;
-    padding:1rem 0;
- }
- 
- #clientes .caja-cliente .caja .comment{
-    color:var(--negro);
+    padding: 1rem 0;
+}
+
+#clientes .caja-cliente .caja .comment {
+    color: var(--negro);
     font-size: 1rem;
-    padding:1rem;
+    padding: 1rem;
     font-family: 'Quicksand';
- }
+}
 
 
-#menu{
-    padding:1rem 8%; 
+#menu {
+    padding: 1rem 8%;
     margin: auto;
 }
 
- #menu .box1{
+#menu .box1 {
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
     margin: 0 3rem;
 }
-  
-#menu .box1 .box{
-    padding:2rem;
-    background:var(--blanco);
+
+#menu .box1 .box {
+    padding: 2rem;
+    background: var(--blanco);
     box-shadow: 0 .5rem 1rem var(--rojo);
-    border:.1rem solid var(--rojo);
+    border: .1rem solid var(--rojo);
     border-radius: .5rem;
     text-align: center;
-    flex:1 1 10rem;
+    flex: 1 1 10rem;
     position: relative;
 }
-  
-#menu .box1 .box img{
-    height:10rem;
+
+#menu .box1 .box img {
+    height: 10rem;
     object-fit: cover;
-    width:100%;
+    width: 100%;
     border-radius: .5rem;
 }
-  
-#menu .box1 .box .precio{
+
+#menu .box1 .box .precio {
     position: absolute;
-    top:2rem; left:2rem;
-    background:var(--rojo);
-    color:var(--blanco);
+    top: 2rem;
+    left: 2rem;
+    background: var(--rojo);
+    color: var(--blanco);
     font-size: 1rem;
     font-family: 'Dancing Script';
-    padding:.5rem 1rem;
+    padding: .5rem 1rem;
     border-radius: .5rem;
 }
-  
-#menu .box1 .box h3{
+
+#menu .box1 .box h3 {
     color: var(--rojo);
     font-family: 'Dancing Script';
     font-size: 1.5rem;
     padding-top: 1rem;
 }
-  
-#menu .box1 .box .stars i{
-    color:gold;
+
+#menu .box1 .box .stars i {
+    color: gold;
     font-size: 0.8rem;
-    padding:1rem .1rem;
+    padding: 1rem .1rem;
 }
 
 
-#menu .btn{
+#menu .btn {
     display: inline-block;
-    padding:.8rem 1rem;
-    border:.2rem solid var(--rojo);
-    color:var(--rojizo);
+    padding: .8rem 1rem;
+    border: .2rem solid var(--rojo);
+    color: var(--rojizo);
     cursor: pointer;
     font-size: 1rem;
     border-radius: .5rem;
@@ -555,178 +566,184 @@ html{
     margin-top: 1rem;
     font-weight: bold;
 }
-#menu .btn::before{
+
+#menu .btn::before {
     content: '';
     position: absolute;
-    top:0; right: 0;
-    width:0%;
-    height:100%;
-    background:var(--rojizo);
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--rojizo);
     transition: .3s linear;
     z-index: -1;
 }
-#menu .btn:hover::before{
-    width:100%;
+
+#menu .btn:hover::before {
+    width: 100%;
     left: 0;
 }
- 
-#menu .btn:hover{
-    color:var(--blanco);
+
+#menu .btn:hover {
+    color: var(--blanco);
 }
 
 
-#footer{
-    padding:1rem 8%; 
+#footer {
+    padding: 1rem 8%;
     margin: auto;
     background: radial-gradient(circle at top right, #d82d2d, #f5caca);
 
 }
-#footer .caja-footer{
+
+#footer .caja-footer {
     display: flex;
     gap: 1.5rem;
     justify-content: space-between;
-    padding:0 1rem;
- }
- 
- #footer .caja-footer .caja{
+    padding: 0 1rem;
+}
+
+#footer .caja-footer .caja {
     padding: 1rem 0;
-    
- }
- 
- 
- #footer .caja-footer .caja h3{
+
+}
+
+
+#footer .caja-footer .caja h3 {
     font-size: 1rem;
     color: #fff;
     padding: 1rem 0;
- }
- 
- #footer .caja-footer .caja p{
+}
+
+#footer .caja-footer .caja p {
     font-size: 0.8rem;
     color: #fff;
     padding: .5rem 0;
     line-height: 2;
     margin-left: 1rem;
- }
- 
- #footer .caja-footer .caja p i{
+}
+
+#footer .caja-footer .caja p i {
     margin-right: 0.5rem;
     color: var(--rojo);
- }
- 
- #footer .caja-footer .caja .share{
-    font-size: 2rem;  
- }
- 
- #footer .caja-footer .caja .share a{
-    height:3rem;
+}
+
+#footer .caja-footer .caja .share {
+    font-size: 2rem;
+}
+
+#footer .caja-footer .caja .share a {
+    height: 3rem;
     width: 3rem;
     line-height: 2.5rem;
     font-size: 1.5rem;
     border-radius: 50%;
     border: .2rem solid var(--blanco);
-    color:  var(--rojo);
+    color: var(--rojo);
     text-align: center;
     align-items: center;
- }
- 
- #footer .caja-footer .caja .share a:hover{
+}
+
+#footer .caja-footer .caja .share a:hover {
     background: var(--rojo);
     color: var(--blanco);
- }
- 
- #footer .caja-footer .caja .link{
+}
+
+#footer .caja-footer .caja .link {
     font-size: .8rem;
     color: #fff;
     padding: 0.5rem 0;
     display: block;
- }
- 
- #footer .caja-footer .caja .link i{
+}
+
+#footer .caja-footer .caja .link i {
     padding-right: .5rem;
     color: var(--rojo);
- }
- 
- #footer .caja-footer .caja .link:hover{
+}
+
+#footer .caja-footer .caja .link:hover {
     color: var(--rojo);
-    
- }
- 
- #footer .caja-footer .caja .link i:hover{
+
+}
+
+#footer .caja-footer .caja .link i:hover {
     padding-right: 2rem;
- }
- 
- #footer .credit{
+}
+
+#footer .credit {
     font-size: 1rem;
     font-weight: normal;
     letter-spacing: .1rem;
-    color:#fff;
+    color: #fff;
     border-top: .1rem solid #fff5;
     padding: 1rem 1rem;
     text-align: center;
- }
- 
-
-
-
-
-@media(max-width:991px){
-
-    html{
-      font-size: 55%;
-    }
-  
-    header{
-      padding:2rem;
-    }
-  
-    section{
-      padding:2rem;
-    }
-  
-}
-
-@media(max-width:425px){
-  
-    #menu-bar{
-      display: initial;
-    }
-  
-    #navbar{
-      position: absolute;
-      top:100%; left: 0; right:0;
-      background: #f7f7f7;
-      border-top: .1rem solid rgba(0,0,0,.1);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-  
-    #navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-  
-    #navbar a{
-      margin: 1.5rem;
-      padding:1.5rem;
-      display: block;
-      border:.2rem solid rgba(0,0,0,.1);
-      border-left:.5rem solid var(--red);
-      background:#fff;
-    }
 }
 
 
 
-@media(max-width:450px){
 
-    html{
-      font-size: 50%;
-    }
 
-    .orden .row form .inputBox input{
-        width:100%;
+/* media queries  */
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 55%;
     }
 }
-  
 
+@media(max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+}
 
+@media(max-width:450px) {
 
+    #menu-bar {
+        display: initial;
+    }
 
+    #navbar {
+        position: absolute;
+        background: var(--blanco);
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    #navbar .active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    #navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--rojo);
+        background: #fff;
+    }
+
+    #inicio .carrusel .titulo h2 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Dancing Script';
+    }
+
+    #inicio .carrusel .titulo p {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #clientes .caja-cliente {
+        gap: 2rem;
+        display: block;
+    }
+
+    #footer .caja-footer {
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+}
