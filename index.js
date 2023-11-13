@@ -17,15 +17,15 @@ app.set('view engine', 'html');app.use(express.static(__dirname + '/public'));
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index.html');
 })
 
-app.get('/menu.html', (req, res) => {
+app.get('/menu', (req, res) => {
     res.render('menu.html');
 })
 
-app.get('/contacto.html', (req, res) => {
+app.get('/contacto', (req, res) => {
     res.render('contacto.html');
 })
 
@@ -37,7 +37,7 @@ app.post("/validar", (req, res) => {
     let registrar = `INSERT INTO clientes (Nombre, Email, Telefono, Mensaje) VALUES ('${nombre}', '${email}', '${telf}', '${msj}')`;
     connection.query(registrar, (err, result) => {
         if (err) throw err;
-        res.redirect('/index.html');
+        res.redirect('/');
     })
 })
 app.listen(3000, () => {
